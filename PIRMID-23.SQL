@@ -1,0 +1,8 @@
+BEGIN 
+    FOR I IN 1..5 LOOP
+        FOR J IN REVERSE I..5 LOOP 
+            DBMS_OUTPUT.PUT(J);
+        END LOOP;
+    DBMS_OUTPUT.NEW_LINE();
+    END LOOP;
+END;
