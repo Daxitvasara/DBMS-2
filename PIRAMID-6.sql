@@ -1,0 +1,8 @@
+BEGIN
+    FOR I IN 65..69 LOOP
+        FOR J IN 65..I LOOP
+            DBMS_OUTPUT.PUT(CHAR(J));
+        END LOOP;
+    DBMS_OUTPUT.NEW_LINE();
+    END LOOP;
+END;
