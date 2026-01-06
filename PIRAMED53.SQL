@@ -1,0 +1,17 @@
+SET SERVEROUTPUT ON;
+BEGIN 
+FOR I IN 1..5 LOOP
+    FOR J IN 1..(5-I) LOOP
+        DBMS_OUTPUT.PUT('. ');
+    END LOOP;
+    FOR K IN REVERSE 1..I LOOP
+    IF MOD(I,2)!=0 THEN
+        DBMS_OUTPUT.PUT('1 ');
+    ELSE
+        DBMS_OUTPUT.PUT('0 ');
+    END IF;
+    END LOOP;
+    DBMS_OUTPUT.NEW_LINE();
+END LOOP;
+END;
+/

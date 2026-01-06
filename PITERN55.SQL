@@ -1,0 +1,13 @@
+SET SERVEROUTPUT ON;
+BEGIN 
+FOR I IN  1..5 LOOP
+    FOR J IN 1..(I-1) LOOP
+        DBMS_OUTPUT.PUT('. ');
+    END LOOP;
+    FOR K IN  I..5 LOOP
+        DBMS_OUTPUT.PUT(K||' ');
+    END LOOP;
+    DBMS_OUTPUT.NEW_LINE();
+END LOOP;
+END;
+/
